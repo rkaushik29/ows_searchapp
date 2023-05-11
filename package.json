@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "lucene": "^2.1.1"
+  }
+}
