@@ -6,12 +6,12 @@ function Search() {
     const [results, setResults] = useState([]);
   
     const handleSearch = () => {
-      const indexPath = '../../cranfield';
-      const queryString = query;
+    //   const indexPath = '../../cranfield';
+    //   const queryString = query;
   
-      const results = search(indexPath, queryString);
+    //   const results = search(indexPath, queryString);
   
-      setResults(results);
+    //   setResults(results);
     };
   
     return (
