@@ -1,5 +1,5 @@
-# ows_searchapp
-Example search application for OpenWebSearch. Created using React JS, to be used in conjuction with the OWS Search API.
+# Graz Tourism App
+Pilot Search Application for OpenWebSearch. Created using React JS, to be used in conjuction with the OWS Search API.
 
 ### Running the API
 First, the OWS Search API needs to be running. You can set this up by following the instructions [here](https://opencode.it4i.eu/openwebsearcheu/wp4/java-lucene-search-api) and running the API on a server of your choice.

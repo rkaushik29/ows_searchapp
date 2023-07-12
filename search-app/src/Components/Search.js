@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 function Search() {
+  // React hooks
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
 
@@ -9,8 +10,9 @@ function Search() {
     setQuery(value.toString());
   };
 
+  // OWS API call
   const handleSearch = () => {
-    fetch(`http://localhost:8000/search?q=${query}`)
+    fetch(`http://localhost:8000/search?q=${query}`)    // Change this to the server address where the API is running
       .then(response => response.json())
       .then(data => {
         setResults(data.results);
@@ -32,6 +34,7 @@ function Search() {
           {results.map((result, index) => (
             <li key={index}>
               <a href={result.fields[0].charSequenceValue} className="link">{result.fields[0].charSequenceValue}</a>
+              <div className='centered-text'>{result.fields[0].text}</div>
             </li>
           ))}
         </ul>
