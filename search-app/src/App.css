@@ -52,7 +52,9 @@
 }
 
 .results-list {
-  margin-top: 16px;  
+  margin-top: 16px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .link {
